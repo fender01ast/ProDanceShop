@@ -257,6 +257,7 @@ form.search{
 .products-category{
     position: relative;
     background-color: #F3F4F6;
+    min-width: 310px;
     min-height: 278px;
     padding: 20px;
     display: flex;
@@ -283,7 +284,7 @@ form.search{
     font-weight: normal;
     font-size: 32px;
     line-height: 39px;
-    margin: 25px 0;
+    margin: 0 0 25px;
 }
 .products-category__link{
     font-style: normal;
@@ -292,6 +293,7 @@ form.search{
     line-height: 20px;
     text-transform: uppercase;
     color: #2D2D2E;
+    z-index: 2;
 }
 .products-category__btn{
     text-align: center;
@@ -302,9 +304,26 @@ form.search{
     color: #FFFFFF;
     background-color: #FF5F23;
     border-radius: 2px;
-    padding: 7px 41px;
+    padding: 11px 29px;
     margin-top: 15px;
+    z-index: 2;
 }
 .s2{
+    padding-top: 25px;
     padding-bottom: 35px;
+}
+.s3{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #F3F4F6;
+}
+.s4{
+    padding: 70px 0 92px;
+}
+.s5{
+    padding: 40px 0 50px;
+    background-color: #F9F9FA;
+}
+.footer{
+    padding: 40px 0 20px;
 }
