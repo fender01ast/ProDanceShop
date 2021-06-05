@@ -7,3 +7,17 @@ document.addEventListener( 'DOMContentLoaded', function () {
         new Splide( splideElements[ i ] ).mount();
     }
 });
+
+let body = document.querySelector('body');
+let cityChooserButton = document.querySelector('.city-chooser');
+let cityChooserPopup = document.querySelector('.popup__city-chooser__wrapper');
+let cityChooserCloseBtn = document.querySelector('.popup__city-chooser__close');
+
+cityChooserButton.addEventListener( 'click', function(){
+    cityChooserPopup.classList.add('clicked');
+    body.classList.add('overflow');
+});
+cityChooserCloseBtn.addEventListener( 'click', function(){
+    cityChooserPopup.classList.remove('clicked');
+    body.classList.remove('overflow');
+});

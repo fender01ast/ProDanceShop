@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/webclip.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="css/style.css?ver=1.0.2">
+    <link rel="stylesheet" href="css/style.css?ver=1.0.3">
 </head>
 <body>
 <header class="header">
@@ -69,14 +69,19 @@
         </nav>
     </div>
 </header>
+<div class="popup__city-chooser__wrapper">
+    <div class="popup__city-chooser">
+        <a href="#" class="popup__city-chooser__close">X</a>
+    </div>
+</div>
 <main class="main">
 <section class="s1">
-    <div class="splide" data-splide='{"type":"loop","width":"100%","height":"527px","pagination":true,"arrows":false,"autoplay":true,"interval":"2500","drag":true}'>
+    <div class="splide" data-splide='{"type":"loop","width":"100%","height":"527px","pagination":true,"arrows":false,"autoplay":true,"interval":"2500","drag":true,"lazyLoad":true}'>
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
                     <div class="slider-content__wrapper">
-                        <img src="images/slide1-img.png" alt="slide1-img" class="slider-content__img">
+                        <img data-splide-lazy="images/slide1-img.png" alt="slide1-img" class="slider-content__img">
                         <div class="container slider__container">
                             <p>Воплоти свои мечты<br>в красивую реальность<br><span>с PRODANCESHOP</span></p>
                         </div>
@@ -84,7 +89,7 @@
                 </li>
                 <li class="splide__slide">
                     <div class="slider-content__wrapper">
-                        <img src="images/slide1-img.png" alt="slide1-img" class="slider-content__img">
+                        <img data-splide-lazy="images/slide1-img.png" alt="slide1-img" class="slider-content__img">
                         <div class="container slider__container">
                             <p>Воплоти свои мечты<br>в красивую реальность<br><span>с PRODANCESHOP</span></p>
                         </div>
@@ -92,7 +97,7 @@
                 </li>
                 <li class="splide__slide">
                     <div class="slider-content__wrapper">
-                        <img src="images/slide1-img.png" alt="slide1-img" class="slider-content__img">
+                        <img data-splide-lazy="images/slide1-img.png" alt="slide1-img" class="slider-content__img">
                         <div class="container slider__container">
                             <p>Воплоти свои мечты<br>в красивую реальность<br><span>с PRODANCESHOP</span></p>
                         </div>
@@ -137,18 +142,18 @@
     <div class="container">
         <h3 class="body__title">Популярные товары</h3>
         <div class="splide__popular-wrapper">
-            <div class="splide" data-splide='{"perPage":5,"rewind":true,"width":"100%","pagination":true,"arrows":false,"autoplay":true,"interval":3500,"drag":true,"padding":10}'>
+            <div class="splide" data-splide='{"perPage":5,"rewind":true,"width":"100%","pagination":true,"arrows":false,"autoplay":true,"interval":3500,"drag":true,"padding":10,"lazyLoad":true}'>
                 <div class="splide__track">
                     <ul class="splide__list popular-slider">
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular1.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular1.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Наколенники NK50 Solo</h4>
@@ -157,13 +162,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular2.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular2.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Полуносочки OB51 Solo</h4>
@@ -172,13 +177,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular3.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular3.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Гетры GD Solo</h4>
@@ -187,13 +192,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular4.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular4.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Пуанты Grishko Fouete</h4>
@@ -202,13 +207,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular5.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular5.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">10,900.00<span> KZT</span></div>
                                 <h4 class="popular__title">Подкупальник F-250 Sasaki</h4>
@@ -217,13 +222,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular1.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular1.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Наколенники NK50 Solo</h4>
@@ -232,13 +237,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular2.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular2.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Полуносочки OB51 Solo</h4>
@@ -247,13 +252,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular3.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular3.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Гетры GD Solo</h4>
@@ -262,13 +267,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular4.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular4.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Пуанты Grishko Fouete</h4>
@@ -277,13 +282,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular5.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular5.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">10,900.00<span> KZT</span></div>
                                 <h4 class="popular__title">Подкупальник F-250 Sasaki</h4>
@@ -292,13 +297,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular1.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular1.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Наколенники NK50 Solo</h4>
@@ -307,13 +312,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular2.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular2.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Полуносочки OB51 Solo</h4>
@@ -322,13 +327,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular3.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular3.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Гетры GD Solo</h4>
@@ -337,13 +342,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular4.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular4.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">1,100.00<span> KZT</span></div>
                                 <h4 class="popular__title">Пуанты Grishko Fouete</h4>
@@ -352,13 +357,13 @@
                         </li>
                         <li class="splide__slide popular__slide">
                             <div class="popular__card">
-                                <img src="images/popular5.png" alt="popular1" class="popular__img">
+                                <img data-splide-lazy="images/popular5.png" alt="popular1" class="popular__img">
                                 <div class="star__wrapper">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
-                                    <img src="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
+                                    <img data-splide-lazy="images/star.svg" alt="star">
                                 </div>
                                 <div class="price">10,900.00<span> KZT</span></div>
                                 <h4 class="popular__title">Подкупальник F-250 Sasaki</h4>
@@ -376,46 +381,46 @@
         <a href="#" class="s4__btn">Выбрать товары по брендам</a>
         <div class="brands__wrapper">
             <div class="brands__item">
-                <a href="#"><img src="images/GRISHKO_2.png" alt="brand-img"></a>
+                <a href="#"><img src="images/GRISHKO_2.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/chacott.png" alt="brand-img"></a>
+                <a href="#"><img src="images/chacott.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/gaynorminden-1.png" alt="brand-img"></a>
+                <a href="#"><img src="images/gaynorminden-1.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/sasaki-sports-vector-logo.png" alt="brand-img"></a>
+                <a href="#"><img src="images/sasaki-sports-vector-logo.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/BLOCH.jpg" alt="brand-img"></a>
+                <a href="#"><img src="images/BLOCH.jpg" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/Sansha_OSTW_logo_2015.jpg" alt="brand-img"></a>
+                <a href="#"><img src="images/Sansha_OSTW_logo_2015.jpg" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/art-blesk.png" alt="brand-img"></a>
+                <a href="#"><img src="images/art-blesk.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/we22.png" alt="brand-img"></a>
+                <a href="#"><img src="images/we22.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/CAPEZIO.png" alt="brand-img"></a>
+                <a href="#"><img src="images/CAPEZIO.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/GRANDPRIX-UKR.png" alt="brand-img"></a>
+                <a href="#"><img src="images/GRANDPRIX-UKR.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/indigo.png" alt="brand-img"></a>
+                <a href="#"><img src="images/indigo.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/logo-Solo.png" alt="brand-img"></a>
+                <a href="#"><img src="images/logo-Solo.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/logo-verba.png" alt="brand-img"></a>
+                <a href="#"><img src="images/logo-verba.png" alt="brand-img" loading="lazy"></a>
             </div>
             <div class="brands__item">
-                <a href="#"><img src="images/logo-variant.png" alt="brand-img"></a>
+                <a href="#"><img src="images/logo-variant.png" alt="brand-img" loading="lazy"></a>
             </div>
         </div>
     </div>
@@ -461,7 +466,7 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="footer__col-1">
-            <img src="images/ФАСАД-МАГАЗИНА.png" alt="ФАСАД-МАГАЗИНА">
+            <img src="images/ФАСАД-МАГАЗИНА.png" alt="ФАСАД-МАГАЗИНА" loading="lazy">
             <a href="/" class="footer-logo"><img src="images/ProDanceShop-logo.png" alt="ProDanceShop-logo"></a>
             <div class="footer__schedule">
                 <p><strong>Посетите наш магазин:</strong><br>ПН – СБ |  10:00 – 19:00<br>ВС |  10:00 – 18:00</p>
@@ -470,7 +475,7 @@
                 <img src="images/footer-phone.svg" alt="footer-phone">
                 <span>+7 776 110 25 04</span>
             </a>
-            <a href="#" class="footer__phone-link">
+            <a href="https://go.2gis.com/5iypcg" class="footer__phone-link" target="_blank">
                 <img src="images/footer-location.svg" alt="footer-phone">
                 <span>г. Алматы, пр. Сейфулина 534,<br>ниже пр. Абая</span>
             </a>
@@ -491,7 +496,72 @@
             </div>
         </div>
         <div class="footer__col-2">
-            <img src="images/2gis-map-img.png" alt="2gis-map-img">
+            <img src="images/2gis-map-img.png" alt="2gis-map-img" loading="lazy">
+            <a href="https://go.2gis.com/5iypcg" class="double-gis__link" target="_blank">
+                <img src="images/2gis-logo.png" alt="2gis-logo">
+                <span>Открыть в 2GIS</span>
+            </a>
+            <div class="footer__links-wrapper">
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">Купальники</a></li>
+                        <li><a href="#">Боди</a></li>
+                        <li><a href="#">Получешки</a></li>
+                        <li><a href="#">Одежда для гимнастики</a></li>
+                        <li><a href="#">Одежда для балета</a></li>
+                        <li><a href="#">Пачки</a></li>
+                        <li><a href="#">Пуанты</a></li>
+                        <li><a href="#">Одежда для разогрева</a></li>
+                        <li><a href="#">Танцевальная обувь</a></li>
+                        <li><a href="#">Одежда для танцев</a></li>
+                        <li><a href="#">Белье</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">Мячи</a></li>
+                        <li><a href="#">Скакалки</a></li>
+                        <li><a href="#">Обручи</a></li>
+                        <li><a href="#">Палочки и ленты</a></li>
+                        <li><a href="#">Сумки и чехлы</a></li>
+                        <li><a href="#">Аксессуары для тренировки</a></li>
+                        <li><a href="#">Аксессуары для волос</a></li>
+                        <li><a href="#">Аксессуары для обуви</a></li>
+                        <li><a href="#">Сувениры</a></li>
+                        <li><a href="#">Защита</a></li>
+                        <li><a href="#">Бижутерия</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">SASAKI</a></li>
+                        <li><a href="#">CHACOTT</a></li>
+                        <li><a href="#">SOLO</a></li>
+                        <li><a href="#">GRAND PRIX</a></li>
+                        <li><a href="#">INDIGO</a></li>
+                        <li><a href="#">GRISHKO</a></li>
+                        <li><a href="#">VERBA</a></li>
+                        <li><a href="#">VARIANT</a></li>
+                        <li><a href="#">SANSHA</a></li>
+                        <li><a href="#">WE2</a></li>
+                        <li><a href="#">PRO</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Скачать каталоги брендов</a></li>
+                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a href="#">Доставка и возврат</a></li>
+                        <li><a href="#">Услуги магазина</a></li>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Как нас найти</a></li>
+                        <li><a href="#">Условия соглашения</a></li>
+                        <li><a href="#">Наши магазины</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -502,6 +572,6 @@
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<script src="js/app.js?ver=1.0.2"></script>
+<script src="js/app.js?ver=1.0.3"></script>
 </body>
 </html>
