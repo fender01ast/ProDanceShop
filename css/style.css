@@ -597,6 +597,9 @@ p.privacy{
     max-width: 100%;
     min-width: 100%;
 }
+.footer__form textarea::placeholder{
+    line-height: normal;
+}
 a.write-us,
 .footer__form input[type="submit"]{
     display: block;
