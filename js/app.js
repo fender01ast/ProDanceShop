@@ -1,12 +1,7 @@
 document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '.splide', {
-        type: 'loop',
-        width: '100%',
-        height: '527px',
-        pagination: true,
-        arrows: false,
-        autoplay: false,
-        interval: 2500,
-        drag: true
-    } ).mount();
+    var splideElements = document.getElementsByClassName( 'splide' );
+    console.log(splideElements);
+    for ( let i = 0, len = splideElements.length; i < len; i++ ) {
+        new Splide( splideElements[ i ] ).mount();
+    }
 });

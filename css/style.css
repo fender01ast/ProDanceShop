@@ -327,3 +327,50 @@ form.search{
 .footer{
     padding: 40px 0 20px;
 }
+.popular__card{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 16px;
+    position: relative;
+}
+.popular__img{
+    width: 100%;
+    max-width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 7px;
+}
+.price{
+    margin: 10px 0 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FF5F23;
+}
+.popular__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #373736;
+}
+.popular__btn{
+    display: block;
+    background: #FF5F23;
+    border-radius: 2px;
+    padding: 9.5px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+.splide__slide.popular__slide{
+    padding: 0 5px;
+}
