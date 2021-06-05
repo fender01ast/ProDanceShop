@@ -13,9 +13,15 @@ body{
     line-height: normal;
     color: #2D2D2E;
 }
+
 a{
     text-decoration-line: none;
 }
+
+img{
+    max-width: 100%;
+}
+
 .container{
     max-width: 1313px;
     margin: 0 auto;
@@ -453,4 +459,156 @@ h1.main__title{
     text-align: center;
     color: #2D2D2E;
     margin-bottom: 40px;
+}
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__col-1{
+    width: 46.077%;
+}
+.footer__col-2{
+    width: 49.961%;
+}
+.footer__signature{
+    margin-top: 40px;
+}
+.footer__signature a{
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6A6A6A;
+    text-align: center;
+}
+span.site-creation{
+    color: #1e1e1e;
+}
+span.maxico{
+    color: #FF5F23;
+}
+.footer-logo {
+    width: 221px;
+    display: block;
+    margin: 76px auto 30px;
+}
+.footer-logo img{
+    width: 221px;
+    height: auto;
+}
+.footer__schedule{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #242425;
+    margin-bottom: 30px;
+}
+.footer__phone-link{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #242425;
+    margin-bottom: 11px;
+}
+.footer__phone-link img{
+    margin-right: 10px;
+}
+
+.footer__form{
+    background-color: #F9F9FA;
+    padding: 30px;
+    margin-top: 90px;
+}
+.footer__form form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form__title,
+p.privacy{
+    width: 100%;
+}
+.form__col-1,
+.footer__form input[type=submit]{
+    width: 47.75%;
+}
+.form__col-2,
+a.write-us{
+    width: 48.14%;
+}
+.form__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #242425;
+    margin-bottom: 20px;
+}
+p.privacy{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #B5B5B5;
+}
+.footer__form input[type=text],
+.footer__form input[type=tel],
+.footer__form textarea{
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #242425;
+    outline: none;
+    min-height: 45px;
+    margin-bottom: 20px;
+    padding: 0 18.5px;
+}
+.footer__form input[type=text]::placeholder,
+.footer__form input[type=tel]::placeholder,
+.footer__form textarea::placeholder{
+    color: #AEAEAE;
+    line-height: 45px;
+}
+.footer__form textarea{
+    min-height: 110px;
+    padding: 14px 18.5px;
+    appearance: none;
+    max-width: 100%;
+    min-width: 100%;
+}
+a.write-us,
+.footer__form input[type=submit]{
+    display: block;
+    background-color: #FF5F23;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 13px 0;
+    border: 2px solid #FF5F23;
+}
+a.write-us{
+    background-color: #fff;
+    border: 2px solid #FF5F23;
+    color: #FF5F23;
+}
+.footer__phone-link span{
+    text-align: center;
 }
