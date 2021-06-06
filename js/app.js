@@ -17,11 +17,19 @@ document.addEventListener( 'DOMContentLoaded', function () {
     });
 
     let burgerBtn = document.querySelector('.burger-menu__wrapper');
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let backgroundOverlay = document.querySelector('.background-overlay');
     burgerBtn.addEventListener('click', function(){
       if ( !this.classList.contains('burger-menu__clicked') ) {
         this.classList.add('burger-menu__clicked');
+        mobileMenu.classList.add('active');
+        backgroundOverlay.classList.add('active');
+        body.classList.add('overflow');
       } else {
         this.classList.remove('burger-menu__clicked');
+        mobileMenu.classList.remove('active');
+        backgroundOverlay.classList.remove('active');
+        body.classList.remove('overflow');
       }
     });
 

@@ -751,6 +751,7 @@ a.popup__city-chooser__close{
     width: 100%;
     height: 100%;
     cursor: pointer;
+    z-index: 4;
   }
 .burger-menu{
     display: none;
@@ -775,6 +776,9 @@ a.popup__city-chooser__close{
 .burger-menu__wrapper:after{
     margin-bottom: 4.07px;
 }
+/*.burger-menu__wrapper.burger-menu__clicked{
+    z-index: 5;
+}*/
 .burger-menu__wrapper.burger-menu__clicked:before {
     transform: translateY(10.5px) rotate(135deg);
 }
@@ -796,9 +800,81 @@ a.popup__city-chooser__close{
 }
 .slider-content__wrapper img{
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
-
+.header__logo-link{
+    z-index: 4;
+}
+.background-overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(00, 00, 00, 0.7);
+    z-index: 1;
+}
+.mobile-menu{
+    display: block;
+    position: fixed;
+    width: 80vw;
+    top: 0;
+    left: -80vw;
+    bottom: 0;
+    right: auto;
+    background-color: #fff;
+    /*padding: 10px;*/
+    z-index: 2;
+    transition: all .4s linear;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.background-overlay.active{
+    display: block;
+}
+.mobile-menu.active{
+    left: 0px;
+}
+.mobile-menu__close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.mobile-menu__wrapper{
+    height: 100%;
+    overflow-y: scroll;
+}
+.mobile-menu__nav{
+    width: 100%;
+}
+.mobile-menu__nav ul,
+.mobile-menu__nav ul li{
+    list-style: none;
+}
+.mobile-menu__nav ul li{
+    border-bottom: 1px solid #f2f2f2;
+}
+.mobile-menu__nav ul li a{
+    display: block;
+    border-left: 3px solid transparent;
+    width: 100%;
+    padding: 15px 20px;
+    color: #242425;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all .2s linear;
+    text-transform: uppercase;
+}
+.mobile-menu__nav ul li a.current,
+.mobile-menu__nav ul li a:hover{
+    border-left: 3px solid #FF5F23;
+}
 @media screen and (max-width: 1439px){
     .container{
         max-width: 90vw;
@@ -951,5 +1027,21 @@ a.popup__city-chooser__close{
     .footer__form{
         padding: 10px;
         margin-bottom: 35px;
+    }
+    .header__container{
+        min-height: 55px;
+    }
+    .header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        background-color: #fff;
+        z-index: 1000;
+    }
+    .main{
+        padding-top: 55px;
     }
 }
