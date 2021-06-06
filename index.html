@@ -8,32 +8,41 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/webclip.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="css/style.css?ver=1.0.4">
+    <link rel="stylesheet" href="css/style.css?ver=1.0.5">
 </head>
 <body>
 <header class="header">
-    <div class="container header__container">   
-        <a href="index.html"><img src="images/ProDanceShop-logo.png" alt="ProDanceShop-logo" class="header__logo-img"></a>
-        <h2 class="header__title">Официальный дистрибьютор танцевальных и гимнастических брендов</h2>
-        <div class="city-chooser">
-            <span>Нур-Султан</span>
-            <img src="images/arrow-chooser.svg" alt="arrow-chooser" class="city-chooser__img">
+    <div class="container header__container">
+        <div class="header__col-1">
+            <div class="burger-menu">
+                <div class="burger-menu__wrapper">
+                    <div></div>
+                </div>
+            </div>   
+            <a href="index.html"><img src="images/ProDanceShop-logo.png" alt="ProDanceShop-logo" class="header__logo-img"></a>
+            <h2 class="header__title">Официальный дистрибьютор танцевальных и гимнастических брендов</h2>
         </div>
-        <div class="social-links__wrapper">
-            <a href="tel:+77761102504" target="_blank"><img src="images/tel-img.svg" alt="tel-img"></a>
-            <a href="https://wa.me/+77761102504" target="_blank"><img src="images/whatsapp-img.png" alt="whatsapp-img"></a>
-            <a href="https://t.me/+77761102504" target="_blank"><img src="images/telegram-img.png" alt="telegram-img"></a>
-        </div>
-        <a href="tel:+77761102504" target="_blank" class="phone-link">+7 776 110 25 04</a>
-        <div class="sign-in__cart__wrapper">
-            <a href="#">
-                <img src="images/user-img.svg" alt="">
-                <span>войти</span>
-            </a>
-            <a href="#">
-                <img src="images/cart-img.svg" alt="">
-                <span>корзина</span>
-            </a>
+        <div class="header__col-2">
+            <div class="city-chooser">
+                <span>Нур-Султан</span>
+                <img src="images/arrow-chooser.svg" alt="arrow-chooser" class="city-chooser__img">
+            </div>
+            <div class="social-links__wrapper">
+                <a href="tel:+77761102504" target="_blank"><img src="images/tel-img.svg" alt="tel-img"></a>
+                <a href="https://wa.me/+77761102504" target="_blank"><img src="images/whatsapp-img.png" alt="whatsapp-img"></a>
+                <a href="https://t.me/+77761102504" target="_blank"><img src="images/telegram-img.png" alt="telegram-img"></a>
+            </div>
+            <a href="tel:+77761102504" target="_blank" class="phone-link">+7 776 110 25 04</a>
+            <div class="sign-in__cart__wrapper">
+                <a href="#">
+                    <img src="images/user-img.svg" alt="">
+                    <span>войти</span>
+                </a>
+                <a href="#">
+                    <img src="images/cart-img.svg" alt="">
+                    <span>корзина</span>
+                </a>
+            </div>
         </div>
     </div>
     <div class="container nav-menu__container">
@@ -76,7 +85,7 @@
 </div>
 <main class="main">
 <section class="s1">
-    <div class="splide" data-splide='{"type":"loop","width":"100%","height":"527px","pagination":true,"arrows":false,"autoplay":true,"interval":"2500","drag":true,"lazyLoad":true}'>
+    <div class="splide">
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
@@ -142,7 +151,7 @@
     <div class="container">
         <h3 class="body__title">Популярные товары</h3>
         <div class="splide__popular-wrapper">
-            <div class="splide" data-splide='{"perPage":5,"rewind":true,"width":"100%","pagination":true,"arrows":false,"autoplay":true,"interval":3500,"drag":true,"padding":10,"lazyLoad":true}'>
+            <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list popular-slider">
                         <li class="splide__slide popular__slide">
@@ -572,6 +581,6 @@
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<script src="js/app.js?ver=1.0.4"></script>
+<script src="js/app.js?ver=1.0.5"></script>
 </body>
 </html>
