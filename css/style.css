@@ -875,6 +875,17 @@ a.popup__city-chooser__close{
 .mobile-menu__nav ul li a:hover{
     border-left: 3px solid #FF5F23;
 }
+.splide__list.popular-slider{
+    align-items: stretch;
+}
+.popular__card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.popular__title{
+    flex: 1;
+}
 @media screen and (max-width: 1439px){
     .container{
         max-width: 90vw;

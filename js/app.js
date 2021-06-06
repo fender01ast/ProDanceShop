@@ -78,7 +78,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
                     991: {
                         perPage  : 3,
                     }
-                }
+                },
+                //fixedHeight: '304px',
             } ).mount();
         } else {
             new Splide( splideElements[ i ] ).mount();
