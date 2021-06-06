@@ -908,6 +908,10 @@ a.popup__city-chooser__close{
     .header__title{
         margin-right: 15px;
     }
+    .products-category__link{
+        max-width: 55%;
+        word-break: break-word;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px){
     .nav-menu__container{
@@ -1036,7 +1040,7 @@ a.popup__city-chooser__close{
         line-height: 18px;
     }
     .footer__form{
-        padding: 10px;
+        padding: 18px;
         margin-bottom: 35px;
     }
     .header__container{
@@ -1054,5 +1058,25 @@ a.popup__city-chooser__close{
     }
     .main{
         padding-top: 55px;
+    }
+    .brands__wrapper{
+        justify-content: space-around;
+    }
+    .brands__item{
+        max-width: 37.01%;
+    }
+    .form__col-1,
+    .form__col-2{
+        width: 100%;
+    }
+    p.privacy{
+        text-align: center;
+    }
+    a.write-us,
+    .footer__form input[type="submit"]{
+        width: 100%;
+    }
+    .footer__form input[type="submit"]{
+        margin-bottom: 20px;
     }
 }
