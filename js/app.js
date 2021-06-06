@@ -6,7 +6,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
     let cityChooserButton = document.querySelector('.city-chooser');
     let cityChooserPopup = document.querySelector('.popup__city-chooser__wrapper');
     let cityChooserCloseBtn = document.querySelector('.popup__city-chooser__close');
-    
     cityChooserButton.addEventListener( 'click', function(){
         cityChooserPopup.classList.add('clicked');
         body.classList.add('overflow');
@@ -32,6 +31,14 @@ document.addEventListener( 'DOMContentLoaded', function () {
         body.classList.remove('overflow');
       }
     });
+    backgroundOverlay.addEventListener('click', function(){
+        if ( this.classList.contains('active') ){
+            burgerBtn.classList.remove('burger-menu__clicked');
+            mobileMenu.classList.remove('active');
+            this.classList.remove('active');
+            body.classList.remove('overflow');
+        }
+    })
 
     var splideElements = document.getElementsByClassName( 'splide' );
     for ( let i = 0, len = splideElements.length; i < len; i++ ) {
